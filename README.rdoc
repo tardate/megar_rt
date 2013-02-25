@@ -1,0 +1,18 @@
+= Megar Runtime Template
+
+This is a template environment for the {megar gem}[https://github.com/tardate/megar].
+It uses RVM and bundler to create an isolated runtime environment for the gem.
+
+Megar ("megaargh!" in pirate-speak) is a Ruby wrapper and command-line (CLI) client for the {Mega API}[https://mega.co.nz/#developers].
+
+== Setup
+
+Clone the repo:
+
+    $ git clone https://github.com/tardate/megar_rt
+
+Run bundle to install the gem and dependencies:
+
+    $ cd megar_rt
+    $ bundle
+

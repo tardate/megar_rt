@@ -16,3 +16,33 @@ Run bundle to install the gem and dependencies:
     $ cd megar_rt
     $ bundle
 
+Then the gem is ready to go. From ruby scripts or irb:
+
+    $ irb -r megar
+    1.9.3p327 :001 > session = Megar::Session.new(email: 'my@mail.com', password: 'MyPassword')
+     => Megar::Session: connected as my@mail.com
+    1.9.3p327 :002 >
+
+And from the command line:
+
+    $ megar
+
+    Megar v0.0.1
+    ===================================
+
+    Usage:
+      megar [options] [commands]
+
+    Options:
+      -h  | --help           : shows command help
+      -v  | --verbose        : run with verbose
+      -e= | --email=value    : email address for login
+      -p= | --password=value : password for login
+
+    Commands:
+      (none)                 : will perform a basic connection test only
+      ls                     : returns a full file listing
+
+    Examples:
+      megar --email=my@mail.com --password=MyPassword ls
+      megar -e my@mail.com -p MyPassword ls
